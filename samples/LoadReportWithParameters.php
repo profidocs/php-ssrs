@@ -14,7 +14,7 @@ $reportParameters = array(
     'test' => '1'
 );
 
-$parameters = new SSRS_Object_ExecutionParameters($reportParameters);
+$parameters = new \SSRS\Object\ExecutionParameters($reportParameters);
 
 $ssrs->setSessionId($result->executionInfo->ExecutionID)
         ->setExecutionParameters($parameters);
